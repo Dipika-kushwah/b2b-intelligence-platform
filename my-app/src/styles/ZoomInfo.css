@@ -1,0 +1,56 @@
+:root{
+  --primary:#0a66ff;      /* ZoomInfo blue */
+  --accent:#2d2f36;       /* dark text */
+  --bg:#f5f7fa;           /* light background */
+  --card:#ffffff;
+  --radius:10px;
+  --shadow:0 3px 8px rgba(0,0,0,.06);
+}
+
+body{margin:0;font-family:Inter,Arial;background:var(--bg);color:var(--accent);}
+a{color:var(--primary);text-decoration:none;} a:hover{text-decoration:underline;}
+
+.zi-container{max-width:1200px;margin:auto;padding:24px;}
+.zi-topbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;}
+.zi-topbar h1{margin:0;font-size:28px;color:var(--primary);}
+.btn-group button{
+  margin-left:8px;background:var(--primary);color:#fff;border:none;border-radius:var(--radius);
+  padding:6px 14px;cursor:pointer;box-shadow:var(--shadow);transition:.2s;
+} .btn-group button:hover{background:#004adb;}
+
+.summary-grid{display:flex;gap:20px;margin:20px 0;}
+.card{
+  flex:1;background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);
+}
+.card h3{margin:0;color:#6b7280;font-size:14px;}
+.card p{margin:4px 0 0;font-size:22px;font-weight:600;color:var(--primary);}
+
+.chart-card,.table-card{
+  background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);margin-bottom:24px;
+}
+.chart-wrapper{height:300px;}
+
+.table-wrapper{overflow-x:auto;}
+table{border-collapse:collapse;width:100%;font-size:14px;}
+th,td{padding:8px 10px;border-bottom:1px solid #e5e7eb;}
+th{background:var(--primary);color:#fff;text-align:left;}
+tr:nth-child(even){background:#eef2f8;}
+
+
+.zi-section { font-family: Inter,Arial; }
+.filter-bar  { display:flex; gap:.5rem; margin:0 0 1rem; }
+.filter-bar input, .filter-bar select {
+  padding:.55rem .8rem; border:1px solid #ccc; border-radius:6px;
+}
+
+.chart-wrap   { height:300px; }
+.table-wrap   { overflow-x:auto; }
+.no-data      { text-align:center; padding:1rem; color:#888; }
+
+.info-card {
+  position:fixed; right:1rem; bottom:1rem;
+  background:#fff; border:1px solid #ddd; padding:1rem 1.2rem;
+  border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,.12);
+  max-width:240px; pointer-events:none; /* stays hover‑only */
+}
+
